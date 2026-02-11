@@ -1,0 +1,77 @@
+/* 整体布局 */
+.page {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 30rpx;
+  box-sizing: border-box;
+  background-color: var(--background);
+}
+
+/* 欢迎区域 */
+.welcome-section {
+  text-align: center;
+  padding: 60rpx 0 40rpx;
+}
+
+.welcome-title {
+  display: block;
+  font-size: 48rpx;
+  font-weight: bold;
+  color: #333333;
+  margin-bottom: 16rpx;
+}
+
+.welcome-subtitle {
+  display: block;
+  font-size: 28rpx;
+  color: #666666;
+}
+
+/* 内容区域 */
+.content-section {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 40rpx;
+}
+
+/* 图片样式 */
+.banner-image {
+  width: 400rpx;
+  height: 300rpx;
+  border-radius: 16rpx;
+  margin-bottom: 30rpx;
+}
+
+.intro-text {
+  display: block;
+  font-size: 28rpx;
+  line-height: 1.6;
+  color: var(--text-secondary);
+}
+
+/* 底部按钮 */
+.footer-section {
+  padding-bottom: 60rpx;
+}
+
+.btn-start {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 88rpx;
+  background-color: #D4A574;
+  color: #ffffff;
+  font-size: 32rpx;
+  border-radius: 44rpx;
+  border: none;
+}
+
+.btn-start::after {
+  border: none;
+}

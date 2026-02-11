@@ -1,0 +1,19 @@
+{
+  "description": "JimBakery 面包店小程序",
+  "packOptions": {
+    "ignore": []
+  },
+  "setting": {
+    "es6": true,
+    "enhance": true,
+    "postcss": true,
+    "minified": true,
+    "minifyWXSS": true,
+    "useApiHostProcess": true
+  },
+  "compileType": "miniprogram",
+  "libVersion": "3.3.0",
+  "appid": "wxYOURAPPID",
+  "projectname": "JimBakery",
+  "debugOptions": {}
+}

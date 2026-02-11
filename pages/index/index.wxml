@@ -1,0 +1,26 @@
+<view class="page">
+  <!-- 顶部欢迎区域 -->
+  <view class="welcome-section">
+    <text class="welcome-title">欢迎来到 JimBakery</text>
+    <text class="welcome-subtitle">新鲜烘焙，每日美味</text>
+  </view>
+
+  <!-- 中间内容区域 -->
+  <view class="content-section">
+    <image
+      class="banner-image"
+      src="https://placehold.co/750x400/F5E6D3/8B7355?text=JimBakery"
+      mode="aspectFill"
+    />
+    <text class="intro-text">
+      精选优质食材，传承手工烘焙技艺。从清晨的第一缕香气，到每一口松软美味，JimBakery 为您呈现最真挚的烘焙体验。
+    </text>
+  </view>
+
+  <!-- 底部按钮 -->
+  <view class="footer-section">
+    <navigator url="/pages/menu/menu" open-type="switchTab" class="btn-start">
+      开始选购
+    </navigator>
+  </view>
+</view>
