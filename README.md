@@ -1,16 +1,60 @@
 # JimBakery 面包店微信小程序
 
-## 1. 项目简介
+## 项目简介
 
-JimBakery 是一款面向面包店场景的微信小程序，提供商品浏览、购物车、订单管理及店长端管理等功能。
+JimBakery 是一款面向面包店的微信小程序，提供外送配送和店内堂食服务。包含**用户端**（顾客购买）和**店长端**（数据管理）两大模块。
 
-## 2. 技术栈
+## 功能特性
 
-- **开发方式**：微信小程序原生开发
-- **样式**：WXSS + CSS 变量
-- **构建**：微信开发者工具
+### 用户端
 
-## 3. 目录结构
+- 微信一键登录
+- 商品浏览与搜索
+- 购物车管理
+- 在线支付（微信/支付宝）
+- 订单追踪
+- 收货地址管理
+
+### 店长端
+
+- 实时营收数据看板
+- 商品/分类管理
+- 订单处理
+- 堂食点单系统
+
+## 技术栈
+
+- **前端**：微信小程序原生框架
+- **后端**：Node.js + Express/NestJS
+- **数据库**：MongoDB/MySQL
+- **图表**：ECharts-for-weixin
+
+## 快速开始
+
+### 环境要求
+
+- 微信开发者工具 v1.06+
+- Node.js v18+
+
+### 安装依赖
+
+```bash
+# 克隆项目
+git clone https://github.com/YimingCao-Eric/JimBakery.git
+
+# 安装小程序依赖（如有）
+cd JimBakery
+npm install
+```
+
+### 启动步骤
+
+1. 使用 [微信开发者工具](https://developers.weixin.qq.com/miniprogram/dev/devtools/download.html) 打开项目
+2. 将 `project.config.json` 中的 `appid` 替换为实际小程序 AppID
+3. 在 `images/icons/` 下补充 TabBar 所需图标（建议 81×81px）
+4. 点击「编译」进行预览与调试
+
+## 目录结构
 
 ```
 JimBakery/
@@ -20,37 +64,25 @@ JimBakery/
 ├── project.config.json # 项目配置
 ├── sitemap.json        # 站点地图（需自行创建）
 ├── images/             # 图片资源
-│   └── icons/         # TabBar 图标
+│   └── icons/          # TabBar 图标
 ├── pages/              # 主包页面
-│   ├── index/         # 首页
-│   ├── menu/          # 菜单
-│   ├── cart/          # 购物车
-│   ├── order/         # 订单
-│   └── user/          # 个人中心
-├── pages_admin/       # 分包：店长端
-│   ├── dashboard/     # 数据看板
-│   ├── products/      # 商品管理
-│   ├── orders/        # 订单管理
-│   └── settings/      # 设置
-└── utils/             # 工具函数
-    ├── request.js     # 网络请求封装
-    └── util.js        # 通用工具
+│   ├── index/          # 首页
+│   ├── menu/           # 菜单
+│   ├── cart/           # 购物车
+│   ├── order/          # 订单
+│   └── user/            # 个人中心
+├── pages_admin/        # 分包：店长端
+│   ├── dashboard/      # 数据看板
+│   ├── products/       # 商品管理
+│   ├── orders/         # 订单管理
+│   └── settings/       # 设置
+├── utils/              # 工具函数
+│   ├── request.js      # 网络请求封装
+│   └── util.js         # 通用工具
+└── docs/               # 项目文档
 ```
 
-## 4. 开发环境要求
-
-- **微信开发者工具**：稳定版 1.06+ 或以上
-- **基础库版本**：3.3.0（见 project.config.json）
-- **Node.js**：如需 npm 构建，建议 v14+
-
-## 5. 启动步骤
-
-1. 使用 [微信开发者工具](https://developers.weixin.qq.com/miniprogram/dev/devtools/download.html) 打开项目
-2. 将 `project.config.json` 中的 `appid` 替换为实际小程序 AppID
-3. 在 `images/icons/` 下补充 TabBar 所需图标（建议 81×81px）
-4. 点击「编译」进行预览与调试
-
-## 6. 项目成员 / 联系方式
+## 项目成员 / 联系方式
 
 - **负责人**：[Eric](https://www.linkedin.com/in/yiming-cao-a760841b0/)
 - **联系方式**：ericcaoyiming@gmail.com
