@@ -32,3 +32,21 @@ yarn-error.log*
 *.njsproj
 *.sln
 *.sw?
+
+# 后端
+server/node_modules/
+server/.env
+server/logs/
+server/*.log
+server/dist/
+server/build/
+server/coverage/
+
+# 数据库
+*.sqlite
+*.sqlite3
+/data/
+
+# 上传文件
+server/uploads/
+server/public/uploads/
